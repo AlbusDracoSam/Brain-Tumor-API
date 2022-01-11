@@ -6,9 +6,7 @@ import tensorflow as tf
 model = tf.keras.models.load_model("model/brain_tumor_model.h5")
 abc = {'glioma_tumor': 0, 'no_tumor': 1, 'meningioma_tumor': 2, 'pituitary_tumor': 3}
 
-
 app = Flask(__name__)
-
 
 @app.route('/')
 def prediction():
