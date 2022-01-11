@@ -29,8 +29,8 @@ def prediction():
         #        com = {'predict': hj}
         #        return jsonify(com)
 
-    return 'hello'
-
+    except :
+        return 'Error'
 
 if __name__ == '__main__':
     app.run()
