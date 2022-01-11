@@ -8,7 +8,7 @@ abc = {'glioma_tumor': 0, 'no_tumor': 1, 'meningioma_tumor': 2, 'pituitary_tumor
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def prediction():
     try:
         link = request.args['link']
